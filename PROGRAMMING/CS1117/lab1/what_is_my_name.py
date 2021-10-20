@@ -11,6 +11,13 @@ print variables with "hello" at start
 
 
 name1 = input("What is your first name? ")
+name1 = name1.lower()
+name1 = name1.capitalize()
 name2 = input("What is your second name? ")
+name2 = name2.lower()
+name2 = name2.capitalize()
+
+
+
 
 print("hello" , name1 , name2)

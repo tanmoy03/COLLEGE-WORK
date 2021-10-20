@@ -7,8 +7,8 @@ get the type
 
 value1 = 21
 # print to screen 
-print("The variable value was %s and it is of type %s" % (value1, type(value1)))
+print("The variable value was %s and it is of type %s" % (value1, type(value1)), ("and it has an id of " ), (id(value1)))
 
 '''
-Prints to screen the variable value and its type <class 'int'>
+Prints to screen the variable value and its type <class 'int'> and its id() number
 '''

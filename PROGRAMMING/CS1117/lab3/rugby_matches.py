@@ -15,8 +15,9 @@ def rugbymatch():
     points_team2 = int(input(("Enter the number of converted/penalty for ") + team2 + (": ")))
 
     #print results for individual teams
-    print(team1 , tries_for_team1, points_team1)
-    print(team2 , tries_for_team2, points_team2)
+    print("Results of Match")
+    print(team1 , tries_for_team1, points_team1, sep="\t")
+    print(team2 , tries_for_team2, points_team2, sep="\t")
 
 rugbymatch()
 
@@ -27,7 +28,7 @@ def req_name_and_age():
     no_of_years = days_old // 365
     remaining_days = days_old % 365
 
-    print(rugby_name , "is" , str(no_of_years) , "years and" , str(remaining_days) , "days old")
+    print(rugby_name , ("is") , str(no_of_years) , ("years and") , str(remaining_days) , ("days old"))
 
 req_name_and_age()
 
