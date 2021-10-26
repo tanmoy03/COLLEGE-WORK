@@ -19,4 +19,13 @@ def main():
 
 if __name__ == "__main__":
     ''' call the main() function in this file '''
-    main()
+    main() 
+    
+    separated_input("phineas","ferb", "and", "rock!!!\n")
+    separated_input("doofenshmirtz","incorporated", "Evil", "!!!\n")
+
+    print(three_numbers(1,3,3))
+
+    print(seasons("hey"))
+
+    print(grades(94))
