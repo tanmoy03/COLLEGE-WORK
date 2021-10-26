@@ -1,5 +1,5 @@
 # ScriptName: my_functions.py
-# Author: <add your name here>
+# Author: Tanmoy Debnath 121324683
 
 # template for calling functions in another file
 
