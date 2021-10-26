@@ -93,4 +93,4 @@ def equal_numbers(number_1, number_2):
         return "Input value(s) must be a number"
         
     else:
-        return number_1**2, number_2**2
+        return number_1**2, number_2**2 
