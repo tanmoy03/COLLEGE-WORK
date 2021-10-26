@@ -3,6 +3,7 @@
 
 # template for calling functions in another file
 
+import math
 
 from types import TracebackType
 
@@ -63,7 +64,8 @@ def seasons(number):
 
 
 def grades(grade):
-
+    '''
+    '''
     if grade >= 85 and grade <= 100:
         return "A"
     elif grade >= 70 and grade <= 84:
@@ -81,3 +83,14 @@ def grades(grade):
         grade > 100
         return "X"
     
+def equal_numbers(number_1, number_2):
+    '''
+    '''
+    if number_1 == number_2:
+        return math.sqrt(number_1) 
+
+    elif type(number_1) != int or type(number_2) != int:
+        return "Input value(s) must be a number"
+        
+    else:
+        return number_1**2, number_2**2
