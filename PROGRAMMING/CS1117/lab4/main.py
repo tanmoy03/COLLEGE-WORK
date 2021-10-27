@@ -28,6 +28,8 @@ if __name__ == "__main__":
 
     print(seasons("hey"))
 
-    print(grades(94))
+    print(grades(94)) 
+
+    print(grades(64)) 
 
     print(equal_numbers("a", "b"))
