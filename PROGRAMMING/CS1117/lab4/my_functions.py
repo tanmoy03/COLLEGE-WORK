@@ -11,7 +11,7 @@ from types import TracebackType
 def print_function():
     print("I'm in another file :)")
 
-def separated_input(param1, param2, sepr = "", endr = "\n"):
+def seperated_input(param1, param2, sepr = "", endr = "\n"):
 
     '''
     param1 -string value
@@ -65,6 +65,10 @@ def seasons(number):
 
 def grades(grade):
     '''
+    Ask for mark out of 100
+    Mark inputted correlates to a grade e.g A,D,F
+    return this grade
+    if mark is not within the 0-100 domain return and "X"
     '''
     if grade >= 85 and grade <= 100:
         return "A"
@@ -85,6 +89,10 @@ def grades(grade):
     
 def equal_numbers(number_1, number_2):
     '''
+    Ask for 2 numbers
+    if both numbers are equal return the square root of that number
+    if the number entered is not an integer, return an error message
+    if the numbers do not equal then return the square of both numbers
     '''
     if number_1 == number_2:
         return math.sqrt(number_1) 
