@@ -21,8 +21,8 @@ if __name__ == "__main__":
     ''' call the main() function in this file '''
     main() 
     
-    separated_input("phineas","ferb", "and", "rock!!!\n")
-    separated_input("doofenshmirtz","incorporated", "Evil", "!!!\n")
+    seperated_input("phineas","ferb", "and", "rock!!!\n")
+    seperated_input("doofenshmirtz","incorporated", "Evil", "!!!\n")
 
     print(three_numbers(1,3,3))
 

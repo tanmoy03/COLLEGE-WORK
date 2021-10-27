@@ -40,6 +40,7 @@ def three_numbers(number_1, number_2, number_3):
     
 def seasons(number):
     '''
+    number -int value
     Ask for number
         if number between 1-4 return according season
         if number is outside of this domain return an error message
@@ -65,6 +66,7 @@ def seasons(number):
 
 def grades(grade):
     '''
+    grade -int value
     Ask for mark out of 100
     Mark inputted correlates to a grade e.g A,D,F
     return this grade
@@ -89,6 +91,8 @@ def grades(grade):
     
 def equal_numbers(number_1, number_2):
     '''
+    number_1 -int value
+    number_2 -int value
     Ask for 2 numbers
     if both numbers are equal return the square root of that number
     if the number entered is not an integer, return an error message
