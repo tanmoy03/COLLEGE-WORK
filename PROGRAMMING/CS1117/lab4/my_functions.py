@@ -19,8 +19,8 @@ def seperated_input(param1, param2, sepr = "", endr = "\n"):
     sepr -sep string value(defaults to “”)
     endr -end string value(defaults to “\n”)
     '''
-
     print(str.capitalize(param1), sepr, str.capitalize(param2), endr)
+
 
 def three_numbers(number_1, number_2, number_3):
     '''
@@ -46,6 +46,7 @@ def seasons(number):
         if number is outside of this domain return an error message
         number - int value
     '''
+    type(number) == int
     if number == 1:
         return "Winter"
     elif number == 2:
@@ -56,9 +57,9 @@ def seasons(number):
         return "Autumn"
     
     elif type(number) != int:
-        return "Input value must be a number"
+        return "Input value(s) must be a number"
     else:
-        return "Number entered,", number, ", is outside of input values"
+         print("Number entered," , number, ", is outside of input values")
         
     
 
@@ -72,6 +73,7 @@ def grades(grade):
     return this grade
     if mark is not within the 0-100 domain return and "X"
     '''
+    type(grade) == int
     if grade >= 85 and grade <= 100:
         return "A"
     elif grade >= 70 and grade <= 84:
@@ -98,6 +100,9 @@ def equal_numbers(number_1, number_2):
     if the number entered is not an integer, return an error message
     if the numbers do not equal then return the square of both numbers
     '''
+    type(number_1) == int
+    type(number_2) == int
+
     if number_1 == number_2:
         return math.sqrt(number_1) 
 

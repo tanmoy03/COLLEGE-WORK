@@ -26,10 +26,10 @@ if __name__ == "__main__":
 
     print(three_numbers(1,3,3))
 
-    print(seasons("hey"))
+    print(seasons(5))
 
     print(grades(94)) 
 
     print(grades(64)) 
 
-    print(equal_numbers("a", "b"))
+    print(equal_numbers(4, 4))
