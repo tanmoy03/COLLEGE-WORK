@@ -21,4 +21,9 @@ def main():
 if __name__ == "__main__":
     ''' call the main() function in this file '''
     main()
-    
+
+var1 = str(73312.13)
+index_before = var1.index(".")-1
+print(int(var1[index_before]))
+print(type(int(var1[index_before])))
+

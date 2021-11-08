@@ -1,0 +1,44 @@
+html {
+    background-color: lightgreen;
+}
+
+p {
+    color: blue;
+}
+
+.question {
+    background-color: black;
+    color: white;
+}
+
+#definition b{
+    color: red;
+}
+
+em{
+    color: red;
+    font-style: italic;
+}
+
+#bow li{
+    color: white;
+    background-color: rebeccapurple;
+}
+
+#reading > h1{
+    color: blue;
+
+}
+
+#reading li{
+    color: blue;
+    background-color: white;
+}
+
+#reading li + li{
+    color: red;
+}
+
+#reading i{
+    color: black;
+}

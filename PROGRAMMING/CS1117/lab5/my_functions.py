@@ -24,8 +24,13 @@ def fizz_buzz(param1):
 def fizz_buzz(param1, divisor_1 = 3, divisor_2 = 5):
     
     if type(param1) != int or type(divisor_1) != int or type(divisor_2) != int:
-        print("Input value(s) must be a statement")
-    elif param1 % 3 ==0 and param1 % 5 == 0:
+        try: 
+            param1 = int(param1)
+            divisor_1 = int(divisor_1)
+            divisor_2 = int(divisor_2)
+        except:
+            return "Input value(s) must be a number"
+    if param1 % 3 ==0 and param1 % 5 == 0:
         return "FizzBuzz"
     elif param1 % 3 == 0:
         return "Fizz"
@@ -40,7 +45,7 @@ def fizz_buzz(param1, divisor_1 = 3, divisor_2 = 5):
     else:
         return param1
     
-    
+
 
 def grades(number):
     '''
