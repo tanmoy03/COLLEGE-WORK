@@ -32,15 +32,15 @@ def fizz_buzz(param1, divisor_1 = 3, divisor_2 = 5):
             return "Input value(s) must be a number"
     if param1 % 3 ==0 and param1 % 5 == 0:
         return "FizzBuzz"
+    elif param1 % divisor_1 == 0 and param1 % divisor_2 ==0:
+        return "FizzBuzz"
+    elif param1 % divisor_1 == 0:
+        return "Fizz"
+    elif param1 % divisor_2 == 0:
+        return "Buzz"
     elif param1 % 3 == 0:
         return "Fizz"
     elif param1 % 5 == 0:
-        return "Buzz"
-    elif param1 % divisor_1 == 0 and param1 % divisor_2 ==0:
-        return "FizzBuzz"
-    elif param1 % divisor_1 ==0:
-        return "Fizz"
-    elif param1 % divisor_2 ==0:
         return "Buzz"
     else:
         return param1

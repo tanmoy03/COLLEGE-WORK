@@ -1,0 +1,66 @@
+html {
+    --base-color: darkred;
+    --main-color: ;
+    --main-bgcolor: ;
+}
+
+body {
+    color: var(--base-color);
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("images/image01.jpg");
+    text-align: center;
+}
+
+
+section {
+    color: darkred;
+    margin: 1em;
+    border: 2px solid darkred;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 0 20px black;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 2px 5px lightslategray;
+    color: darkred;
+    margin: 1em;
+    border: 2px solid darkred;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 30px black;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    text-align: left;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.strong {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 5px darkred;
+    font-family:serif;
+    margin: 1em;
+    box-shadow: 0 0 1px black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+}
+
+.pearth {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+}

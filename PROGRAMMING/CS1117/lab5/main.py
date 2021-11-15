@@ -15,7 +15,7 @@ def main():
     Call the functions defined in the functions.py file
     """
     print_function()
-    print(fizz_buzz(100))
+    print(fizz_buzz(6,4,6))
     print(grades("H"))
 
 if __name__ == "__main__":
