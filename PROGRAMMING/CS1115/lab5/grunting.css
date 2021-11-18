@@ -1,7 +1,27 @@
-html {
+:root {
     --base-color: darkred;
     --main-color: ;
     --main-bgcolor: ;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 2px 5px lightslategray;
+    color: darkred;
+    margin: 1rem;
+    border: 2px solid darkred;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px black;
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    padding-left: 1rem;
 }
 
 body {
@@ -11,56 +31,81 @@ body {
     text-align: center;
 }
 
-
 section {
-    color: darkred;
+    color: white;
     margin: 1em;
     border: 2px solid darkred;
     background-color: white;
-    border-radius: 2em;
+    border-radius: 2rem;
     box-shadow: 0 0 20px black;
+    font-size: 15px;
+    background-image: url("images/soill.jpg");
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 3px 2px 5px black;
 }
 
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 3px 2px 5px lightslategray;
-    color: darkred;
-    margin: 1em;
-    border: 2px solid darkred;
-    background-color: white;
-    padding: 1em;
-    border-radius: 1em;
-    box-shadow: 0 0 30px black;
+section p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: darkred;
+    text-shadow: 3px 2px 5px whitesmoke;
+}
+
+p {
+    font-size: 20px;
+}
+
+.sec1 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
 }
 
 ul {
     text-align: left;
-
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
 }
 
+
 .strong {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
     text-shadow: 1px 1px 5px darkred;
     font-family:serif;
-    margin: 1em;
+    margin: 1rem;
     box-shadow: 0 0 1px black;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 2em;
+    border-radius: 2rem;
 }
 
-.pearth {
-    width: 90%;
+section img {
+    border: 5px solid darkred;
+    box-shadow: 0 0 10px black;
+}
+
+footer {
+    background-color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    color: darkred;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px black;
+    margin: 1rem;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 2em;
+    border-radius: 2rem;
 }
