@@ -117,42 +117,18 @@ def value_in_list(my_list, value):
 
 # f
 def concat(list1, list2):
-    '''
-    function joins list1 and list 2 and returns them both as a new list
-    '''
-    try: 
 
+    try:
         
+        if type(list1) == str and type(list2) == str:
+            return list1 + " " + list2
 
-        if type(list1) == list and type(list2) == list:     # else if list1 and list2 are lists
-            list3 = list1 + list2    # joins both lists together using +
-            return list3       # returns a new list called list3
-
-        elif type(list1) == str and type(list2) == str:   # if list1 is a string and list2 is a string
-            return (list1 + " " + list2)  # it joins both paramaters together and adds a space between them
+        else:
+            return list1 + list2
         
-    
-        elif type(list1) == list and type(list1) != type(list2):
-            list4 = []
-            list4.append(list2)
-            list5 = list1 + list4
-            return list5
-
-        elif type(list2) == list and type(list1) != type(list2):
-            list4 = []
-            list4.append(list1)
-            list6 = list4 + list2
-            return list6
-
-
-        else: 
-            list3 = []     # list3 is an empty list
-            list3.append(list1)   #  appends list1 value(s) into list3
-            list3.append(list2)   # appends list2 value(s) into list3
-            return list3 # returns list3
-
     except:
-        return "Houston, we have a problem!"
+        return "Houston, we have a problem"
+        
 #g
 def remove(value, my_list):
     '''

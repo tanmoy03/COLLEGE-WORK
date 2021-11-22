@@ -19,5 +19,20 @@ alist = "hello"
 # alist = list(str(123)
 while i < len(alist):
 
-    print("index:", i,"- value:",alist[i], "- ", type(alist[i]))
+    print("index i:", i,"- value:",alist[i], "- ", type(alist[i]))
+    
+    j=0
+    while j < len(alist[i]):
+
+        inner_list = alist[i]
+        # print(inner_list)
+
+        print("index j:", j,"- value:",alist[i][j])
+
+        j += 1
+
     i += 1
+
+
+
+

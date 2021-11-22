@@ -37,6 +37,9 @@ def main():
     print(concat([5,6,7], "a"))
     print(concat("a", [5,6,7]))
     print(concat("hello", "world"))
+    print(concat([8,9], [5,6,7]))
+    print(concat("hello", "worldw"))
+    print(concat(3.9, 8))
 
     # print(remove("l", "hlello"))
 

@@ -1,0 +1,45 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    color: #DDDDDD;
+    box-shadow: 0 0 30px black;
+    margin: 2rem;
+    border: 2px solid black;
+    background-color: white;
+    background-image: url(mywebsiteimages/prism-6174502_1280.jpg);
+    padding: 5em;
+    border-radius: 1rem;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url(mywebsiteimages/Yandhi_Cover_Art.jpg);
+}
+
+
+a { 
+    color: black; 
+    text-shadow: 3px 2px 5px whitesmoke;
+}
+
+nav li {
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 30px black;
+    border-width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
