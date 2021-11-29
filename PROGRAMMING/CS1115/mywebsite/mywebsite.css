@@ -1,3 +1,27 @@
+@viewport {
+    width: device-width;
+}
+
+@media screen and (min-width: 468px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    /* body {
+        display: grid;
+        grid-template-columns: 80% 20% ;
+        grid-template-rows: auto;
+
+    } */
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+* {
+    box-sizing: border-box;
+}
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4rem;
@@ -19,13 +43,46 @@ body {
     background-image: url(mywebsiteimages/Yandhi_Cover_Art.jpg);
 }
 
+section {
+    font-size: 2rem;
+    box-shadow: 0 0 30px black;
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+}
 
 a { 
     color: black; 
     text-shadow: 3px 2px 5px whitesmoke;
 }
 
+.yo figure{
+    float: left;
+    width: 33.33%;
+}
+
+figure img{
+    width: fit-content;
+    box-shadow: 0 0 15px black;
+}
+figcaption {
+    font-size: 0.75em;
+}
+
 nav li {
+    display: block;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; */
     font-size: 2rem;
     text-align: center;
     border: 2px solid black;
@@ -38,8 +95,9 @@ nav li {
     margin-right: auto;
 }
 
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} */
+

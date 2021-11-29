@@ -61,5 +61,12 @@ WHERE score =
 );
 
 -- 6
-SELECT actorid
-FROM castings 
+SELECT id 
+FROM actors
+WHERE id IN 
+(   SELECT actorid
+    FROM castings
+    GROUP BY actorid
+
+    HAVING count(movieid) >= 10
+);
