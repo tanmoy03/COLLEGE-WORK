@@ -77,3 +77,22 @@ def while_loop(max_number = ""):
     except:
         return "Did you break the break or should we continue?"
 
+#Q4
+def all_pairs(s1, s2):
+    i = 0
+    list1 = []
+    
+    try:
+        if i == 0:
+            print(False) 
+        
+        while s1:
+            for x in s2:
+                if i >= len(s1):
+                    return list1
+                xy = str(s1[i]) + str(x)
+                list1.append(xy)
+            i += 1
+    except:
+        print(True)
+        return [-1]
