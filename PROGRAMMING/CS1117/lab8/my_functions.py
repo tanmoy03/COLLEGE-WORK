@@ -96,3 +96,5 @@ def all_pairs(s1, s2):
     except:
         print(True)
         return [-1]
+
+        beuh
