@@ -23,6 +23,7 @@
     box-sizing: border-box;
     font-size: 24px;
 }
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4rem;
@@ -63,26 +64,66 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 1.5rem;
+    text-shadow: 3px 2px 5px #c691d1;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1rem;
+    text-shadow: 1px 2px 3px lightslategray;
+    text-align: left;
+}
+
+i {
+    text-shadow: 3px 2px 5px #c691d1;
+    font-style: normal;
+}
+
 a { 
     color: black; 
     text-shadow: 2px 1px 3px whitesmoke;
 }
 
+small {
+    font-size: 0.75rem;
+}
+
+small a {
+    font-size: 0.75rem;
+}
+
 nav a { 
     color: black; 
-    font-family: fantasy;
+    font-size: 1.5rem;
     text-shadow: 2px 1px 3px white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.yo figure{
+a:link {
+    text-decoration: none; 
+}
+
+a:visited {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+    text-shadow: 2px 1px 3px #c691d1;
+}
+
+a:active {
+    text-decoration: none; 
+}
+
+.row img {
     float: left;
-    width: 33.33%;
+    width: 33%;
+    padding: 1rem;
 }
 
-figure img{
-    width: fit-content;
-    box-shadow: 0 0 15px black;
-}
 figcaption {
     font-size: 0.75em;
 }
@@ -105,9 +146,25 @@ nav li {
     margin-right: auto;
 }
 
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-} */
+.football {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.football td {
+    border-color: #c691d1;
+    border-style: solid;
+    border-width: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.heading {
+    font-weight: bold;
+    font-family: Impact, Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 2px 5px #c691d1;
+}
 
