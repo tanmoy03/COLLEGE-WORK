@@ -38,5 +38,3 @@
 
 # print(concat(3.9, 8))
 
-git config --global user.email "tanmoydebnath2003@gmail.com"
-git config --global user.name "tanmoy03"
