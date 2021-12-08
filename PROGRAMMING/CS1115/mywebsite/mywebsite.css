@@ -2,21 +2,71 @@
     width: device-width;
 }
 
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 350px) {
     
+    body {
+        display: grid;
+        
+    }
+
+    #football {
+        width: 105%;
+        padding: 1em;
+        
+    }
+
+    section {
+        width: fit-content;
+    }
+
+    img {
+        width: fit-content;
+    }
+
+    #music {
+        display: block;
+        margin-right: 1em;
+        margin-left: 0.5em;
+    }
+
+    #anime img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
-    /* body {
-        display: grid;
-        grid-template-columns: 80% 20% ;
-        grid-template-rows: auto;
 
-    } */
-}
-
-@media screen and (min-width: 1024px) {
-
+    #football {
+        width: 90%;
+    }
+    
+    #anime img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #music {
+        display: inline-block;
+        margin-left: 2em;
+        margin-right: 1em;
+        width: 90%;
+    }
+    
+    #music ol {
+        float: left;
+        width: 50%;
+    }
+    
+    #music img {
+        float: right;
+        width: 50%;
+    }
+    
 }
 
 * {
@@ -25,7 +75,7 @@
 }
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
     color: #1A1110;
     text-shadow: 5px 7px 7px #c691d1;
@@ -86,6 +136,12 @@ a {
     text-shadow: 2px 1px 3px whitesmoke;
 }
 
+b {
+    font-size: 1rem;
+    text-shadow: 3px 2px 5px #c691d1;
+    text-align: center;
+}
+
 small {
     font-size: 0.75rem;
 }
@@ -101,6 +157,12 @@ nav a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+nav nav a {
+    font-size: 1rem;
+    /* color: black;
+    text-shadow: 2px 1px 3px black; */
+}
+
 a:link {
     text-decoration: none; 
 }
@@ -111,7 +173,8 @@ a:visited {
 
 a:hover {
     text-decoration: none; 
-    text-shadow: 2px 1px 3px #c691d1;
+    color: white;
+    text-shadow: 5px 5px 5px black;
 }
 
 a:active {
@@ -124,17 +187,47 @@ a:active {
     padding: 1rem;
 }
 
+#football {
+    width: 90%;
+}
+
+#anime img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#music {
+    display: inline-block;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+#music ol {
+    float: left;
+    width: 50%;
+}
+
+#music img {
+    float: right;
+    width: 50%;
+}
+
+#social {
+    font-family: serif;
+    font-size: 1rem;
+    text-align: center;
+    width: fit-content;
+    border-radius: 0%;
+}
+
+
 figcaption {
     font-size: 0.75em;
 }
 
 nav li {
     display: block;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around; */
-    font-size: 1em;
     text-align: center;
     border: 2px solid black;
     box-shadow: 0 0 30px black;
@@ -146,9 +239,19 @@ nav li {
     margin-right: auto;
 }
 
+nav nav li {
+    box-shadow: 0 0 0px black;
+    border: transparent;
+    padding: 0px;
+    margin: none;
+    width: 50%;
+}
+
 .football {
     border-collapse:collapse;
     border-spacing:0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .football td {
@@ -168,3 +271,16 @@ nav li {
     text-shadow: 3px 2px 5px #c691d1;
 }
 
+footer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3rem;
+    text-shadow: 5px 2px 4px crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
