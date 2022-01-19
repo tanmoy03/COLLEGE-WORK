@@ -1,0 +1,103 @@
+This is to certify that the work I am submitting is my own and has been done by me solely and
+not in consultation with anyone else. Neither I nor anyone else have submitted this work for
+assessment, either at University College Cork or elsewhere. I have read and understood Univer-
+sity College Cork’s exam regulations, plagiarism policy and Code of Honour. I understand that
+breaches of this declaration are serious issues and can incur penalties.
+
+1.  (i) article. 
+    TAG_A is an <article> tag as it can be distributed independently without any relation to the other elements in the web page
+
+    (ii) h1.
+    TAG_B is a <h1> tag as it serves as the title for the article.
+
+    (iii) b.
+    TAG_C is a <b> tag as it is drawing the reader's attention to that element.
+
+    (iv) i 
+    TAG_D is an <i> tag as "Lord Haw Haw" is a name that is given to mule. i tags often indicate a technical term, phrase from
+    a foreign language or a name. In this scenario it is applicable.
+
+    (v) em 
+    TAG_E has a certain emphasis on the phrasing of "me".
+
+
+2.  (i) Wrong order of end tags. The <i> tag should close first then the <h2> tag. This is because the <h2> tag was opened first so it had to be closed last.
+
+    (ii) Inside the attribute href there is no hash symbol (#) used to represent the id attribute. 
+    It should have been "<a href="#island">Go to Love Island</a>"
+
+    (iii) 
+    <a href="/macnabb.html"><img src="/images/macnabb.jpg" alt="Image of Matthew MacNabb"></a>
+
+    (iv)
+        <table>
+            <tr>
+                <th>height</th>
+                <th>width</th>
+                <th>depth</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td colspan="2">4</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">3</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+            </tr>
+        </table>   
+
+3.  (i) 8
+
+    (ii) a. http://www.island.com/images/liam.jpg
+         b. http://www.island.com/winners/millie.html
+
+    (iii) a.  ../images/liam.jpg
+          b.  /millie.html
+
+    (iv) a. http://www.island.com/index.html
+         b. http://www.island.com/errors/error.html
+         c. http://www.island.com/winners/index.html
+
+4.  (i) There is no id attribute that correlates to #F within the element h1.
+        "id= 'F'" is rather within the ol element with id= 'E'.
+
+    (ii) 'Millie' is of class='female', therefore the "section .female" selector is valid and 
+        hence 'Millie' is selected.
+
+    (iii) As li + li matches all li elements that are immediately preceded by sibling li of id='F' (Millie) and li of id='K' (Liam).
+
+    (iv) 8. As the '+' selects every element preceding the initial sibling element the elements selected are 
+        <p id="D">, <ol id="E">, <p id="I">, <ol id="J">, <li id="G">, <li id="H">, <li id="L">, <li id="M">
+
+    (v) li 
+
+5.  (i) 
+     First we check if there is any conflict. There is not as they are not selecting the same element.
+    Therefore it must be the rules of inheritance. The css selector of the tag section makes all all elements 
+    within the section green by inheritence. However the ol selector blocks the inheritence and makes the ol elements
+    blue therefore 'Teddy' is blue.
+
+    (ii)
+     We check if there is conflict. 'Teddy' is of class='male' so it is selected by .male and it is also of id='M' so it 
+    is selected by #M. Hence, there is conflict. Origin is not an issue as the conflict is on the same stylesheet. Therefore it must
+    be specificity. The more specific rule wins. We check if there is an id being selected. There is (id='M'). Therefore the id 
+    selector wins and 'Teddy' is blue as the id selector is most specific.
+
+    (iii)
+     We check if there is conflict. 'Teddy' is of class='male' so it is selected by .male and it is also an li so it 
+    is selected by the li selector. Hence, there is conflict. Origin is not an issue as the conflict is on the same stylesheet. Therefore it must
+    be specificity. The more specific rule wins. We check if there is an id being selected. There is not. The next most specific is class attribute.
+    There is a class attribute being selected. Hence class='male' wins and 'Teddy' is blue.
+
+    (iv)
+     We check if there is conflict. There isn't. Therefore it must be due to inheritance. The ol selector selects all ol elements and 
+    makes them green by inheritance. However the li element blocks the inheritance and makes the li elements blue. Hence 'Teddy' is blue.
+
+    (v)
+     We check if there is conflict. There is. Origin is not an issue as the conflict is on the same stylesheet. Therefore it must
+    be specificity. The more specific rule wins. We check if there is an id attribute being selected. There is not.
+    We check for a class attribute being selected. There is not. Thus we must compare length. The 'section ol li' selector is longer 
+    and hence it is more specific. 'Teddy' is therefore blue.
