@@ -1,0 +1,2 @@
+this decorator '@' defines a route 
+this route specifies the view function for this endpoint

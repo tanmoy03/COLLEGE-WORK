@@ -11,3 +11,19 @@ for index in range(len(name)): #6
 # type 3: get both, get the item and you get the index
 for index, letter in enumerate(name):
     print(index, letter)
+
+
+fnames = ["Mary", "John"]   
+lnames = ["Murphy" "O Sullivan"]
+
+students = [fnames, lnames]
+
+for student in students:
+    for firstname in student[0]:
+        print(firstname)
+
+shopping = [34, 45, 90, 100]
+totalSpend = 0  
+
+for shop in shopping:
+    totalSpend += shop

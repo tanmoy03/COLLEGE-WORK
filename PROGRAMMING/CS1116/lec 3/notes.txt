@@ -1,0 +1,9 @@
+{{ name }} == placeholder
+used to put variables in from other files
+
+Template - HTML with placeholders in it (gaps)
+we used a Jinja 2 template
+
+
+greeting = hello_dict[language] ====== greeting = hello_dict.get(language)
+however with the "get" you can add more paramaters 
