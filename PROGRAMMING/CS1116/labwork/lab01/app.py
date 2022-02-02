@@ -43,14 +43,31 @@ def rps(player):
         else: 
             return render_template("rps.html", name=draw, mychoice=mychoice, player=player)
 
-# Problem 3 
+# Problem 3: outputs one line of lotto numbers
 
-@app.route("/could_it_be_me")
-def send_lotto_numbers():
-    line = []
+# @app.route("/could_it_be_me")
+# def send_lotto_numbers():
+#     line = []
 
-    for i in range(0,6):
-        n = randint(0,47)
-        line.append(n)
+#     for i in range(0,6):
+#         n = randint(0,47)
+#         line.append(n)
         
-    return render_template("lotto.html", line=line)
+#     return render_template("lotto.html", line=line)
+
+# Problem 4
+@app.route("/could_it_be_me/<int:num_lines>")
+def send_lottery_numbers(num_lines):
+    lines = []
+    x = 1
+    
+    while num_lines >= x:
+        line = []
+        for i in range(0,6):
+            n = randint(0,47)
+            line.append(n)
+        lines.append(line)
+        x += 1
+
+    return render_template("lotto.html", lines = lines)
+

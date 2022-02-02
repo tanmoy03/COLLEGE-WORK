@@ -2,11 +2,11 @@ inFile = open("debanks.txt", "r")
 outFile = open("song.txt", "w")
 
 # Method 1: using a python file iterator
-lineNo = 1
-for line in inFile:
-    outputLine = str(lineNo) + " - " + str(len(line)) + " - " + line
-    outFile.write(outputLine)
-    lineNo += 1
+# lineNo = 1
+# for line in inFile:
+#     outputLine = str(lineNo) + " - " + str(len(line)) + " - " + line
+#     outFile.write(outputLine)
+#     lineNo += 1
 
 # Method 2: read lines method - reads one line, includes \n character
 # empty string when it reaches the end of the file
@@ -19,13 +19,13 @@ for line in inFile:
 #     lineNo += 1
 
 # Method 3: use the read() method - Reads ENTIRE file as ONE string
-# entireFile = inFile.read()
-# lines = entireFile.split("\n") #gives me a back a list of the lines
-# lineNo = 1
+entireFile = inFile.read()
+lines = entireFile.split("\n") #gives me a back a list of the lines
+lineNo = 1
 
-# for line in lines:
-#     print(str(lineNo) + ": " + line)
-#     lineNo += 1
+for line in lines:
+    print(str(lineNo) + ": " + line)
+    lineNo += 1
 
 # ///////// OR //////////
 
