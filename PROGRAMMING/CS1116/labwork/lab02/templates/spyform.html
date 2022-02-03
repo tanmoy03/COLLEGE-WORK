@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<form action="" method="POST">
+
+    <label for="given_name">Enter your given name:</label>
+    <input type="text" size="50" name="given_name" id="given_name" value="{{ given_name }}"/>
+    <br>
+    <label for="family_name">Enter your family name:</label>
+    <input type="text" size="50" name="family_name" id="family_name" value="{{ family_name }}"/>
+    <br>
+    <input type="submit">
+    
+</form>
+
+{% endblock %}
