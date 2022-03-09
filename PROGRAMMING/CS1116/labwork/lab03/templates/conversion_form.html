@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method="POST" novalidate>
+
+        {{ form.hidden_tag() }}
+        {{ form.before.label }}
+        <br>
+        {{ form.before() }}
+        {% for error in form.before.errors %}
+            {{ error }}
+        {% endfor %}
+        <br>
+        {{ form.tempbefore() }}
+        {% for error in form.tempbefore.errors %}
+            {{ error }}
+        {% endfor %}
+        <br>
+        <br>
+        <img src="../static/camera.jpeg" alt="Canon camera on a black background">
+        <br>
+        {{ form.after.label }}
+        <br>
+        {{ form.after() }}
+        {% for error in form.after.errors %}
+            {{ error }}
+        {% endfor %}
+        <br>
+        {{ form.tempafter(disabled=True) }}
+        <br>
+        <br>
+        {{ form.submit() }}
+        <br>
+        <br>
+        <a href="../run.py/shift">Go to text shift form</a>
+        <br>
+    </form>
+
+{% endblock %}

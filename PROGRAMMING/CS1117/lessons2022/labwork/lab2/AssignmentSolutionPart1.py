@@ -29,8 +29,9 @@ def meanBoutsPerPatient(list):
     average = round(average)
     return average
     
-lineNo = 1 
+lineNo = 0
 for line in lines:
+    lineNo +=1
     print("Patient " + str(lineNo) + " had " + str(meanBoutsPerPatient(line)) + " inflammatory bouts on average")
 
 # Question 2: part 2
@@ -46,10 +47,12 @@ def meanBoutsAcrossAllPatients():
             number = int(number)
             sum_of_values += number
         average = sum_of_values/len(values)
-        print("Patient" + str(lineNo) + " had " + str(round(average)) + " inflammatory bouts on average")
+        print("Patient " + str(lineNo) + " had " + str(round(average)) + " inflammatory bouts on average")
         lineNo += 1
         sum += average
     avg = sum/3
     return "The average number of inflammatory bouts on this trial medication is: " + str(avg)
 
 print(meanBoutsAcrossAllPatients())
+
+inFile.close()

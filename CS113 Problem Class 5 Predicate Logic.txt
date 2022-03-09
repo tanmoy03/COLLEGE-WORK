@@ -1,0 +1,103 @@
+CS1113
+Problem Class 5: Predicate Logic
+Name: Tanmoy Debnath
+ID: 121324683
+
+Q1:
+(i) For all filenames, they are made up of letter or digits.
+(ii) There exists a CS module where the module has an introduction to logic
+(iii) For all files, a file is stored in a restricted area if and only if the file contains private information
+(iv) There exists a state where a table is being updated and another table is in a consistent state, where the
+tables are part of a group of database tables.
+
+Q2
+(i) True 
+(ii) False
+(iii) False
+(iv) False
+(v) True
+(vi)False
+
+Q3
+(i) True
+(ii) False
+(iii) True
+(iv)False
+(v)False
+(vi)True
+(vii) False
+(viii) True
+(ix)True
+(x)False
+(xi) True
+(xii)False
+(xiii)False
+(xiv)True
+(xv)False
+
+Q4
+(i)
+(a)True
+(b)False
+(c)True
+(d)True
+(e)True
+(f) False 
+(g)False
+
+(ii)
+(a)It is possible. It can be put in row 1 column 2 or row 2 column 2 or row 2 column 3.
+(b)It is not possible. Cannot be put in every place where y is next to K
+(c)
+(d)K is already occupied by K
+
+Q5
+(i)not a well formed formula
+(ii) well formed formula
+(iii) not a well formed formula
+(iv) not a well formed formula
+
+Q6
+(i)
+U = {s | s is a student }
+V = {x} 
+π = {registered_fulltime , registered_60_credits}
+∀x(registered_fulltime(x) ⇒ registered_60_credits(x))
+(ii) 
+U = {c | c is a character }
+V = {x} 
+π = {greater_than_or_equal_to_6 , non_alphanumeric}
+∀x(greater_than_or_equal_to_6(x) ∧ non_alphanumeric(x))
+(iii)
+U = {t | t is a timetable }
+V = {x} 
+π = {room_LL1,class}
+∃x(room_LL1(x)∧¬class(x))
+(iv)
+U = {c | c is a character }
+V = {x} 
+π = {dead,life_force>0 , achieved_all_tasks}
+∀x(¬dead(x)⇒(life_force>0(x) ∨ achieved_all_tasks(x))
+
+Q7
+(i)
+P(x)∧Q(x)
+(ii)
+P(y),Q(x)
+(iii)
+Q(x)⇒R(x),P(x)
+(iv)
+Q(x)⇒(∃xP(x)),P(x)
+
+Q8
+(i)x and y is bound
+(ii)y is not bound
+(iii)x is free and y is free
+(iv) x is free, y and z is bound
+
+Q9
+(i) logically equivalent
+(ii) not logically equivalent
+(iii) logically equivalent
+(iv)not logically equivalent
+(v)logically equivalent

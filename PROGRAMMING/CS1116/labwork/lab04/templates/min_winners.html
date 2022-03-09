@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.country.label }}
+        {{ form.country() }}
+        <br>
+        {{ form.points.label }}
+        {{ form.points() }}
+        <br>
+        {{ form.submit() }}
+    </form>
+
+    {% if winners %}
+        <table>
+            <caption>{{ caption }}</caption>
+            {% for winner in winners %}
+                <tr>
+                    <td>{{ winner["year"] }}</td>
+                    <td>{{ winner["country"] }}</td>
+                    <td>{{ winner["song"] }}</td>
+                    <td>{{ winner["performer"] }}</td>
+                    <td>{{ winner["points"] }}</td>
+                </tr>  
+            {% endfor %} 
+        </table>
+    {% endif %}
+
+    <!-- {% if winners_by_country %}
+        <table>
+            <caption>{{ caption }}</caption>
+            {% for winner in winners_by_country %}
+                <tr>
+                    <td>{{ winner["year"] }}</td>
+                    <td>{{ winner["country"] }}</td>
+                    <td>{{ winner["song"] }}</td>
+                    <td>{{ winner["performer"] }}</td>
+                    <td>{{ winner["points"] }}</td>
+                </tr>  
+            {% endfor %} 
+        </table>
+    {% endif %}
+
+    {% if winners_by_points %}
+        <table>
+            <caption>{{ caption }}</caption>
+            {% for winner in winners_by_points %}
+                <tr>
+                    <td>{{ winner["year"] }}</td>
+                    <td>{{ winner["country"] }}</td>
+                    <td>{{ winner["song"] }}</td>
+                    <td>{{ winner["performer"] }}</td>
+                    <td>{{ winner["points"] }}</td>
+                </tr>  
+            {% endfor %} 
+        </table>
+    {% endif %} -->
+
+    <table>
+        <caption>{{ caption }}</caption>
+        {% for winner in winners_by_country %}
+            <tr>
+                <td>{{ winner["year"] }}</td>
+                <td>{{ winner["country"] }}</td>
+                <td>{{ winner["song"] }}</td>
+                <td>{{ winner["performer"] }}</td>
+                <td>{{ winner["points"] }}</td>
+            </tr>  
+        {% endfor %} 
+        {% for winner in winners_by_points %}
+            <tr>
+                <td>{{ winner["year"] }}</td>
+                <td>{{ winner["country"] }}</td>
+                <td>{{ winner["song"] }}</td>
+                <td>{{ winner["performer"] }}</td>
+                <td>{{ winner["points"] }}</td>
+            </tr>  
+        {% endfor %} 
+        {% for winner in winners_by_country_and_points %}
+            <tr>
+                <td>{{ winner["year"] }}</td>
+                <td>{{ winner["country"] }}</td>
+                <td>{{ winner["song"] }}</td>
+                <td>{{ winner["performer"] }}</td>
+                <td>{{ winner["points"] }}</td>
+            </tr>  
+        {% endfor %} 
+    </table>
+
+{% endblock %}
