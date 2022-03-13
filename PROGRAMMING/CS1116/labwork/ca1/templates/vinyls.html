@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <p id='all_vinyl'>
+        <h1>Our Vinyl Catalog</h1>
+        <table>
+            {% for vinyl in vinyls %}
+                <tr>
+                    <td>{{ vinyl["name"] }}</td>
+                    <td>€{{ vinyl["price"] }}</td>
+                    <td>
+                        <a href="{{ url_for('vinyl', vinyl_id=vinyl['vinyl_id']) }}">
+                        See details
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </p>
+
+{% endblock %}

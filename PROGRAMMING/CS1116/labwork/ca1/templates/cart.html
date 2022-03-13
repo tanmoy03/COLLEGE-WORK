@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>Your cart</h1>
+    {% if cart %}
+    <table>
+        {% for vinyl_id in cart %}
+            <tr>
+                <td>{{ names[vinyl_id] }}</td>
+                <td>{{ cart[vinyl_id] }}</td>
+                <td>
+                    <a href="{{ url_for('remove_from_cart', vinyl_id=vinyl['vinyl_id']) }}">
+                    Remove from Cart
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    {% else %}
+        <p>Your cart is empty!</p>
+    {% endif %}
+
+{% endblock %}

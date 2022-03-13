@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>{{ vinyl["name"] }}</h1>
+    <h2>
+        by <p>{{ vinyl["Artist"] }}</p>
+    </h2>
+    <br>
+    <p class="vinyl_id">
+        Genre: {{ vinyl["genre"] }}
+    </p>
+    <p class="vinyl_id">
+        Price: €{{ vinyl["price"] }}
+    </p>
+    <p class="vinyl_id">
+        {{ vinyl["description"] }}
+    </p>
+    <br> 
+    <p>
+        <a href="{{ url_for('add_to_cart', vinyl_id=vinyl['vinyl_id']) }}" class="add_to_cart">
+            Add to cart
+        </a>
+    </p>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+td {
+    border-color: #263652;
+    border-style:double;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    size: 50%;
+}
+
+body {
+    background-color: #152238;
+}
+
+h2 {
+    text-shadow: 3px 2px 5px black;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+p, a, li, h2, td {
+    color: whitesmoke;
+}
+
+#user {
+    display: inline;
+}
+
+a:hover {
+    color:rgb(4, 154, 192);
+}
+
+h1 {
+    text-shadow: 3px 2px 5px black;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 a {
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 p {
+    font-style: italic;
+    display: inline;
+}
+
+table td {
+    padding: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: #263652;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.vinyl_id {
+    padding: 20px;
+}
+
+.add_to_cart {
+    text-shadow: 3px 2px 5px black;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    text-shadow: 10px black;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover {
+    color: rgb(4, 154, 192);
+}
+

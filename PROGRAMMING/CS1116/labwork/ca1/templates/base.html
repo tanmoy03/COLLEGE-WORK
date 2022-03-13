@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>VinylGo</title>
+        <link rel="icon" href="../static/images/kakashi.ico" />
+        <link rel="stylesheet" href="../static/stylesheet.css" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+
+        <header>
+            <a href="/~td12/cgi-bin/ca1/run.py//"><img class="logo" src="../static/images/2022-03-11.png" alt="logo"></a>
+            <nav>
+                <ul class="nav_links">
+                    {% if g.user %}
+                        <li id="user">User id: {{ g.user }}</li>
+                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+
+        {% block main_content %}
+
+        {% endblock %}
+
+
+    </body>
+</html>

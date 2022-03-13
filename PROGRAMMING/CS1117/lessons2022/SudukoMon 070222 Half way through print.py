@@ -37,7 +37,7 @@ def printBoard (SBoard):
 
 	#Note you will need to tinker with this to get it to look as it should - think the end character in the print statement. 
 			
-def solveBoard (b, row, col):
+"""def solveBoard (b, row, col):
 
 	result = False
 	
@@ -52,9 +52,9 @@ def solveBoard (b, row, col):
 					#return true and the board
 		#At the end of my loop, set the square back to zero, pass back false and the board
 
-	return result, b
+	return result, b"""
 
-def isValidMove (b, row, col, number):
+"""def isValidMove (b, row, col, number):
 
 	valid = True
 
@@ -69,7 +69,7 @@ def isValidMove (b, row, col, number):
     # figure out what mini grid you're in. To do this you need to get the starting square e.g. 4 // 3 * 3 = 3 (row) and 1 //3 * 3 = 0 (column)
 
     # once you have your starting point consider every column in that row, then consider the row and the next i.e.
-    # nested for loop, outer loop runs three times (for each row) and the inner loop runs 9 times (for each column)
+    # nested for loop, outer loop runs three times (for each row) and the inner loop runs 9 times (for each column)"""
 
 	
 # Main Program
@@ -77,12 +77,12 @@ filename = "easyPuzzle.txt"
 board = readBoard(filename)
 print (board)
 
-print("\nPROBLEM:")
-printBoard(board)
+# print("\nPROBLEM:")
+# printBoard(board)
 
-result, solvedBoard = solveBoard(board, 0, 0)
-if result == False:
-    print("Solution does not exist")
-else:
-    print("\nSOLUTION:")
-    printBoard(solvedBoard)
+# result, solvedBoard = solveBoard(board, 0, 0)
+# if result == False:
+#     print("Solution does not exist")
+# else:
+#     print("\nSOLUTION:")
+#     printBoard(solvedBoard)

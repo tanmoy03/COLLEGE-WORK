@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>
+        <a href="{{ url_for('vinyls') }}">Our Vinyl</a>
+    </h1>
+    <h1 class="cart">
+        <a href="{{ url_for('cart') }}">Your cart</a>
+    </h1>
+
+{% endblock %}
