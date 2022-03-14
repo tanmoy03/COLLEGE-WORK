@@ -6,7 +6,6 @@ CREATE TABLE users
     password TEXT NOT NULL
 );
 
-
 DROP TABLE IF EXISTS vinyls;
 
 CREATE TABLE vinyls 

@@ -83,7 +83,6 @@ def remove_from_cart(vinyl_id):
             del session["cart"][vinyl_id]
         return redirect( url_for("cart") )
 
-
 @app.route("/register", methods=["GET","POST"])
 def register():
     form= RegistrationForm()

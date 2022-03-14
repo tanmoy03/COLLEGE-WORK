@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@viewport {
+    width: device-width;
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 70%;
+    }
+    
+    nav li {
+        font-size: 16px;
+    }
+
+}
+
 
 * {
     box-sizing: border-box;
@@ -23,10 +38,6 @@ table {
 p {
     text-align: center;
     padding: 10px;
-}
-
-.logo {
-    size: 50%;
 }
 
 body {
@@ -86,6 +97,11 @@ header {
     padding: 30px 10%;
 }
 
+header a:hover {
+    box-shadow: 0 0 10px black;
+}
+
+
 .vinyl_id {
     padding: 20px;
 }
@@ -101,6 +117,7 @@ header {
 .logo {
     cursor: pointer;
 }
+
 
 .nav_links {
     list-style: none;
